@@ -19,6 +19,7 @@ class CreateClientsTable extends Migration
             $table->string('name');
             $table->foreignId('city_id')->constrained();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
