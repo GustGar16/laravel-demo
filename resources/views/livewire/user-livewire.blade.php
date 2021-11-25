@@ -15,7 +15,7 @@
                     <td>{{ $item->name }}</td>
                     <td>{{ $item->email }}</td>
                     <td>{{ $item->created_at }}</td>
-                    <td>{{ ($item->verified_at) ? 'Si' : 'No' }}</td>
+                    <td>{{ ($item->email_verified_at) ? 'Si' : 'No' }}</td>
                     <td>
                         <button type="button" class="btn btn-info" wire:click="edit({{ $item->id }})">Editar</button>
                         <button type="button" class="btn btn-danger" wire:click="delete({{ $item->id }})">Eliminar</button>

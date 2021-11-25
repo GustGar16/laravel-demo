@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('user/verify/{token}', [App\Http\Controllers\UserController::class, 'verify']);
 
 Route::middleware(['auth:sanctum', 'verified'])->prefix('admin')->group(function () {
     Route::get('cities', [App\Http\Controllers\CityController::class, 'index'])->name('admin.cities');
