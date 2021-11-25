@@ -10,4 +10,8 @@ class Client extends Model
     use HasFactory;
 
     protected $fillable = ['cod','name', 'city_id'];
+
+    public function city(){
+        return $this->belongsTo(City::class);
+    }
 }
