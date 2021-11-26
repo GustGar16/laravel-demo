@@ -70,6 +70,15 @@
                                     </form>
                                 </div>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.users') }}">Usuarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.cities') }}">Ciudades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.clients') }}">Clientes</a>
+                            </li>
                         @endguest
                     </ul>
                 </div>
