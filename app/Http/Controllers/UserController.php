@@ -18,6 +18,6 @@ class UserController extends Controller
         if($user->save())
             return view('users.validation', compact('user'));
 
-        abort(500);
+        abort(404);
     }
 }
